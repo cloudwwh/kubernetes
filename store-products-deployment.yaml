@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: store-products
-        image: linuxaraja/store-products:1.0.1
+        image: linuxaraja/store-products:1.0.0
         ports:
         - containerPort: 80
