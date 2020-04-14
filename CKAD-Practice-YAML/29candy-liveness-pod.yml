@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: candy-service
+spec:
+  containers:
+  - name: candy-service
+    image: linuxraja/candy-service
+    livenessProbe:
+      httpGet:
+        path: /healthz
+        port: 8081
